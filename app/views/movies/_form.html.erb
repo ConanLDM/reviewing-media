@@ -1,5 +1,5 @@
 
-<%= simple_form_for(@movie) do |f| %>
+<%= simple_form_for @movie, html: { multipart: true } do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
@@ -9,6 +9,8 @@
     <%= f.input :movie_length %>
     <%= f.input :director %>
     <%= f.input :rating %>
+     <%= f.label :image %>
+    <%= f.file_field :image %>
   </div>
 
   <div class="form-actions">
