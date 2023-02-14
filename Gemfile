@@ -46,12 +46,14 @@ gem "bootsnap", require: false
 gem "sassc-rails"
 
 # Authentication solution
-
 gem "devise", "4.8.1"
 
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
+
+# image uploading gem
+gem "cloudinary"
 
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
